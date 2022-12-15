@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+    width: fit-content;
+}
+.left{
+    text-align: left;
+}
+.rigth{
+    text-align: right;
+}
+#enc-img{
+    width: 100%;
+}
