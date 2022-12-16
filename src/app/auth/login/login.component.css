@@ -1,65 +1,84 @@
-.general{
-    text-align: left;
-    margin: 2% 15%;
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
 }
-.left{
-    width: 50%;
-    height: fit-content;
-    display: block;
-    float: left;
+.content{
+    display: flex;
+    justify-content: space-evenly;
 }
-.rigth{
-    width: 20%;
-    height: fit-content;
-    display: inline;
+header{
+    text-align: center;
+    background-color: rgb(240, 240, 240);
 }
 #enc-img{
-    display: block;
     width: 30%;
-    margin-left: 25%;
+    margin: 1%;
+}
+.left{
+    width:max-content;
+    height: max-content;
+    display: block;
+    margin: 4% -6% 0% 2%;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     color: #582532;
-    font-size: 4rem;
+    width: max-content;
+    margin-bottom: 2%;
 }
 
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 17px;
     color: #582532;
-    font-size: 2rem;
+    margin: 4% 0%;
+    width: max-content;
 }
 input{
     border-color: #AB8D5D;
     border-radius: 1rem;
     display: block;
-    text-align: center;
-    height: 1.5rem;
-    width: 50%;
+    text-align: left;
+    padding: 5%;
+    height: 2rem;
+    width: 300px;
     margin: 2% 0%;
 }
 label{
     color: #AB8D5D;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     margin-left: 1%;
+    font-size: 15px;
 }
 
 button{
-    width: 30%;
-    height: 3rem;
     font-size: 1rem;
     background-color: #B42E51;
     color: white;
     font-style: bold;
     border-radius: 1rem;
     border: none;
-    margin: 10% 30%;
+    margin: 7% 30%;
+    padding: 3%;
+    width: 45%;
+}
+
+button:hover{
+    background-color: #44121f;
+}
+
+#log-img{
+    width:40%;
+    margin: 1%;
+    border-radius: 1rem;
 }
 
 footer{
+    margin-top: 3%;
     text-align: center;
-}
-#log-img{
-    height: max-content;
+    font-style: italic;
+    height:100%;
 }
