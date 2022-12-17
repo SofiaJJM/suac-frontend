@@ -3,67 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .content{
+    width: auto;
+    height: 953px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: white;
 }
-header{
-    text-align: center;
-    background-color: rgb(240, 240, 240);
-}
-#enc-img{
-    width: 30%;
-    margin: 1%;
-}
+
 .left{
-    width:max-content;
-    height: max-content;
+    width: 45%;
+    height: 100%;
     display: block;
-    margin: 4% -6% 0% 2%;
+    margin-left: 6%;
+}
+
+#enc-img{
+    width: 55%;
+    margin: 7% 0%;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #582532;
     width: max-content;
-    margin-bottom: 2%;
+    margin: 4% 0%;
 }
 
 p{
     font-family: 'Lucida Sans', Verdana, sans-serif;
-    font-size: 17px;
+    font-size: 2rem;
     color: #582532;
-    margin: 4% 0%;
+    margin: 2% 0%;
     width: max-content;
 }
+
+label{
+    color: #8b7a5b;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 20px;
+    margin: 2% 0%;
+}
+
 input{
     border-color: #AB8D5D;
     border-radius: 1rem;
     display: block;
     text-align: left;
-    padding: 5%;
-    height: 2rem;
-    width: 300px;
-    margin: 2% 0%;
-}
-label{
-    color: #AB8D5D;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-    margin-left: 1%;
-    font-size: 15px;
+    padding: 2%;
+    width: 75%;
+    margin: 3% 0%;
 }
 
+
 button{
-    font-size: 1rem;
+    font-size: 20px;
     background-color: #B42E51;
     color: white;
     font-style: bold;
     border-radius: 1rem;
     border: none;
-    margin: 7% 30%;
+    margin: 3% 30%;
     padding: 3%;
-    width: 45%;
+    width: 30%;
 }
 
 button:hover{
@@ -71,14 +75,28 @@ button:hover{
 }
 
 #log-img{
-    width:40%;
-    margin: 1%;
+    width:55%;
     border-radius: 1rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 40%;
+    }
+    to{
+        margin-left: 1%;
+        width: 55%;
+    }
 }
 
 footer{
-    margin-top: 3%;
     text-align: center;
     font-style: italic;
-    height:100%;
+    background-color: rgb(240, 240, 240);
+    height: 15%;
+    margin: -2% 1%;
+    padding: 2% 0%;
 }
