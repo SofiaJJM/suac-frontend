@@ -5,23 +5,23 @@
 }
 
 .content{
-    width: auto;
-    height: 953px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: white;
 }
 
 .left{
-    width: 45%;
+    width: 55%;
     height: 100%;
     display: block;
     margin-left: 6%;
 }
 
 #enc-img{
-    width: 55%;
-    margin: 7% 0%;
+    width: 45%;
+    margin: 5% 0%;
 }
 
 h1{
@@ -53,7 +53,7 @@ input{
     display: block;
     text-align: left;
     padding: 2%;
-    width: 75%;
+    width: 62%;
     margin: 3% 0%;
 }
 
@@ -67,7 +67,7 @@ button{
     border: none;
     margin: 3% 30%;
     padding: 3%;
-    width: 30%;
+    width: 25%;
 }
 
 button:hover{
@@ -75,28 +75,23 @@ button:hover{
 }
 
 #log-img{
-    width:55%;
+    width:42%;
     border-radius: 1rem;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: slidein;
 }
 
 @keyframes slidein{
     from{
-        margin-left: 100%;
-        width: 40%;
+        opacity: 0%;
     }
     to{
-        margin-left: 1%;
-        width: 55%;
+        opacity: 100%;
     }
 }
 
 footer{
     text-align: center;
     font-style: italic;
-    background-color: rgb(240, 240, 240);
-    height: 15%;
-    margin: -2% 1%;
-    padding: 2% 0%;
+    width: 100%;
 }
