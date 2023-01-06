@@ -5,14 +5,14 @@
         <hr>
         <p><strong>Sistema de Atención Ciudadana</strong></p>
         <p>Alumbrado Público</p>
-        <form action="">
+        <form [formGroup]="form" (ngSubmit)="ingresar()">
             <mat-form-field class="example-full-width inp">
-                <input type="text" matInput placeholder="Ingrese el usuario">
+                <input type="text" matInput placeholder="Ingrese el usuario" formControlName="user">
               </mat-form-field>
               <mat-form-field class="example-full-width inp">
-                <input type="password" matInput placeholder="Ingrese la contraseña">
+                <input type="password" matInput placeholder="Ingrese la contraseña" formControlName="password">
               </mat-form-field>
-              <button mat-raised-button class="btn" [disabled]="">Ingresar</button>
+              <button mat-raised-button class="btn" color="primary" type="submit">Ingresar</button>
         </form>
     </div>
     <div class="im">

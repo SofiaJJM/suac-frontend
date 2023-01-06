@@ -6,6 +6,7 @@
 
 .content{
     display: flex;
+    flex-direction: row;
     height: 89%;    
     align-items: center;
     justify-content: center;
@@ -48,8 +49,9 @@ label{
 }
 
 form{
-    width: 80%;
+    width: 100%;
     justify-content: center;
+
 }
 
 .inp{
@@ -64,14 +66,10 @@ form{
 .btn{
     height: 3rem;
     width: 50%;
-    background-color: #b61140 !important;
     color: white !important;
     margin-left: 25%;
 }
 
-.btn:hover{
-    background-color: #24080f !important;
-}
 
 .im{
     display: flex;
@@ -104,3 +102,13 @@ footer{
     height: 10%;
     margin-bottom: -1%;
 }
+
+@media screen and (max-width: 480px) {
+    .left{
+        width: 100%;
+    }
+
+    .content {
+      flex-direction: column;
+    }
+  }
