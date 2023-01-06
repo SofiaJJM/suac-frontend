@@ -79,7 +79,7 @@ form{
 }
 
 #log-img{
-    height: 100%;
+    height: 99%;
     border-radius: 1rem;
     animation-duration: 3s;
     animation-name: slidein;
